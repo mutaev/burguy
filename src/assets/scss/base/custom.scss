@@ -1,0 +1,22 @@
+@mixin margin-bottom($margin-bottom) {
+   & > * {
+      margin-bottom: $margin-bottom;
+   }
+
+   & > *:last-child {
+      margin-bottom: 0;
+   }
+}
+
+@mixin margin-fix() {
+   & > *:last-child {
+      margin-bottom: 0;
+   }
+}
+
+@mixin line-clamp($lines: 2) {
+   display: -webkit-box;
+   overflow: hidden;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: $lines;
+}

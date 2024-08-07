@@ -1,0 +1,35 @@
+// Grid
+$width_mob: 360px;
+$width_tab: 768px;
+$width_desk: 1024px;
+$width_md: 1280px;
+$width_big: 1440px;
+$width_large: 1920px;
+
+//Other
+$transition: all .2s ease;
+
+%linkHover {
+   transition: $transition;
+   position: relative;
+
+   &::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      background: #000;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      transition: $transition;
+   }
+   
+   &:hover,
+   &:focus {
+      &::before {
+         width: 100%;
+         right: auto;
+         left: 0;
+      }
+   }
+}
