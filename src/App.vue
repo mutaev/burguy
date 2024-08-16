@@ -79,6 +79,4 @@ const menu2 = [
 
 </template>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>
