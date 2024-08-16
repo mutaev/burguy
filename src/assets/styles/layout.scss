@@ -1,0 +1,22 @@
+.layout {
+   padding: 48px 0 64px;
+
+   &__inner {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 32px;
+   }
+
+   &__main {
+      max-width: 976px;
+
+      & > *:not(:last-child) {
+         margin-bottom: 48px;
+      }
+   }
+
+   &__aside {
+      flex-grow: 1;
+   }
+}

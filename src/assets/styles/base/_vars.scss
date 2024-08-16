@@ -1,0 +1,42 @@
+// Grid
+$width_mob: 360px;
+$width_tab: 768px;
+$width_desk: 1024px;
+$width_md: 1280px;
+$width_big: 1440px;
+$width_large: 1920px;
+
+$grid-width: 1170px;
+$grid-gutter: 30px;
+$grid-columns: 12;
+
+:root {
+   // colors
+   --accent: #dd2b1c;
+
+   // other
+   --transition-duration: 0.2s;
+}
+
+%hover-line {
+   position: relative;
+   &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: auto;
+      right: 0;
+      width: 0;
+      height: 1px;
+      background: var(--primary);
+      transition: width var(--transition-duration) ease;
+   }
+   &:hover,
+   &:focus {
+      &::after {
+         width: 100%;
+         left: 0;
+         right: auto;
+      }
+   }
+}
