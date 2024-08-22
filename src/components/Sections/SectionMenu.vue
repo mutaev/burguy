@@ -2,7 +2,7 @@
   <section class="section section--menu">
     <div class="section__wrapper">
       <div class="section__header">
-        <h2 class="section__title">{{ title }}</h2>
+        <h2 class="section__title">Бургеры</h2>
       </div>
       <div class="section__content">
         <div class="menu">
@@ -17,41 +17,8 @@
   </section>
 </template>
 
-<script>
+<script setup lang="ts">
 import MenuItem from '@/components/MenuItem.vue';
-
-export default {
-  components: { MenuItem },
-  props: {
-    title: {
-      type: String,
-      default: 'Наше меню',
-      required: false,
-    },
-    menu: {
-      type: Array,
-      required: true,
-    },
-  },
-  data() {
-    return {
-      basketMenu: [
-        {
-          name: '',
-          img: '',
-          price: '',
-          products: '',
-        },
-      ],
-    };
-  },
-  methods: {
-    addProduct(e) {
-      e.preventDefault();
-      console.log(item.name);
-    },
-  },
-};
 </script>
 
 <style>

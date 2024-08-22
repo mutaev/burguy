@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { getMenu } from '@/api/rest/menu.ts';
+import { getMenu } from '@/api/rest/menu';
 
 const items = ref([]);
 
